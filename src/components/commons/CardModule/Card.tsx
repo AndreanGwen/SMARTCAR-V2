@@ -7,10 +7,11 @@ interface PropTypes {
   status: boolean;
   mode: boolean;
   onClick: () => void;
+  image: string;
 }
 
 const CardModule = (props: PropTypes) => {
-  const { title, desc, status, mode, onClick } = props;
+  const { title, desc, status, mode, onClick, image } = props;
 
   return (
     <div className="flex items-center bg-blue-950 p-2 rounded-2xl justify-between">
@@ -21,7 +22,7 @@ const CardModule = (props: PropTypes) => {
               alt="heroui logo"
               height={40}
               radius="sm"
-              src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+              src={image}
               width={40}
               className={`${status == true ? "hidden" : ""}`}
             />

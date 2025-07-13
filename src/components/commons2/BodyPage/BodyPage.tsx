@@ -114,6 +114,7 @@ const BodyPage = () => {
           status={status}
           mode={hazard}
           onClick={() => setHazardL()}
+          image="/quickControl/hazard.jpg"
         />
         <CardModule
           title="Left light"

@@ -20,10 +20,12 @@ const FootPage = ({ height }: PropTypes) => {
           </div>
         </Link>
 
-        <div className="flex flex-col items-center justify-center gap-1">
-          <CiAlignBottom color="white" size={25} />
-          <p className="text-white text-sm">Library</p>
-        </div>
+        <Link href="/library">
+          <div className="flex flex-col items-center justify-center gap-1">
+            <CiAlignBottom color="white" size={25} />
+            <p className="text-white text-sm">Library</p>
+          </div>
+        </Link>
 
         <div className="flex flex-col items-center justify-center gap-1">
           <CiBoxList color="white" size={25} />

@@ -41,8 +41,14 @@ const BodyPage = () => {
           title="Smart Car EsP"
           desc={endPoint?.toString() || "http://localhost:3000"}
           status={cardStyle}
+          image="/quickControl/car.jpg"
         />
-        <CardModule title="Smart Home" desc="eP : -" status={cardStyle} />
+        <CardModule
+          title="Smart Home"
+          desc="eP : -"
+          status={cardStyle}
+          image="/quickControl/sHome.jpg"
+        />
       </div>
     </div>
   );
