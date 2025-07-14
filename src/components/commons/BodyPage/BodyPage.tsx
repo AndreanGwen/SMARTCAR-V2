@@ -32,23 +32,27 @@ const BodyPage = () => {
         />
       </div>
 
-      <div
-        className={`flex gap-3 ${
-          cardStyle == true ? "justify-center" : "flex-col"
-        }`}
-      >
-        <CardModule
-          title="Smart Car EsP"
-          desc={endPoint?.toString() || "http://localhost:3000"}
-          status={cardStyle}
-          image="/quickControl/car.jpg"
-        />
-        <CardModule
-          title="Smart Home"
-          desc="eP : -"
-          status={cardStyle}
-          image="/quickControl/sHome.jpg"
-        />
+      <div className="w-full flex justify-center">
+        <div
+          className={`flex gap-3 ${
+            cardStyle == true
+              ? "justify-center flex-col w-56"
+              : "flex-col w-full"
+          }`}
+        >
+          <CardModule
+            title="Smart Car EsP"
+            desc={endPoint?.toString() || "http://localhost:3000"}
+            status={cardStyle}
+            image="/quickControl/car.jpg"
+          />
+          <CardModule
+            title="Smart Home"
+            desc="eP : -"
+            status={cardStyle}
+            image="/quickControl/sHome.jpg"
+          />
+        </div>
       </div>
     </div>
   );

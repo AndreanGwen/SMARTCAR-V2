@@ -124,6 +124,7 @@ const BodyPage = () => {
           onClick={() => {
             setLeftL();
           }}
+          image="/quickControl/light.jpg"
         />
         <CardModule
           title="Right light"
@@ -131,6 +132,7 @@ const BodyPage = () => {
           status={status}
           mode={rightLight}
           onClick={() => setRightR()}
+          image="/quickControl/light.jpg"
         />
         <CardModule
           title="Obstacle mode"
@@ -138,6 +140,7 @@ const BodyPage = () => {
           status={status}
           mode={obstacle}
           onClick={() => setObstacleM()}
+          image="/quickControl/danger.jpg"
         />
         <CardModule title="Tracking mode" desc="Smart Car" status={status} />
         <CardModule title="Manual mode" desc="Smart Car" status={status} />

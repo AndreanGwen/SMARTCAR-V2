@@ -27,10 +27,12 @@ const FootPage = ({ height }: PropTypes) => {
           </div>
         </Link>
 
-        <div className="flex flex-col items-center justify-center gap-1">
-          <CiBoxList color="white" size={25} />
-          <p className="text-white text-sm">Automation</p>
-        </div>
+        <Link href="/automation">
+          <div className="flex flex-col items-center justify-center gap-1">
+            <CiBoxList color="white" size={25} />
+            <p className="text-white text-sm">Automation</p>
+          </div>
+        </Link>
 
         <div className="flex flex-col items-center justify-center gap-1">
           <CiCloud color="white" size={25} />
